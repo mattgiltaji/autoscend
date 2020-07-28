@@ -1328,6 +1328,7 @@ void initializeDay(int day)
 
 boolean dailyEvents()
 {
+	auto_birdOfTheDay();
 	while(auto_doPrecinct());
 	handleBarrelFullOfBarrels(true);
 
@@ -3609,6 +3610,7 @@ void auto_begin()
 	// Actually doing stuff should start from here down.
 	// =================================================
 
+	resetMaximize(); // initializeDay calls equipBaseline for some reason so this is needed until it is refactored.
 	initializeDay(my_daycount());
 	handlePulls(my_daycount());
 
