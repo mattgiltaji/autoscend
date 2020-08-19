@@ -1144,6 +1144,10 @@ boolean bees_hate_usable(string it);						//Defined in autoscend/paths/bees_hate
 boolean LM_bhy();											//Defined in autoscend/paths/bees_hate_you.ash
 boolean L13_bhy_towerFinal();								//Defined in autoscend/paths/bees_hate_you.ash
 
+boolean in_bugbear();										//Defined in autoscend/paths/bugbear_invasion.ash
+boolean bugbear_initializeSettings();						//Defined in autoscend/paths/bugbear_invasion.ash
+boolean LM_bugbear();										//Defined in autoscend/paths/bugbear_invasion.ash
+
 boolean LM_bond();											//Defined in autoscend/auto_bondmember.ash
 boolean bond_buySkills();									//Defined in autoscend/auto_bondmember.ash
 boolean bond_initializeSettings();							//Defined in autoscend/auto_bondmember.ash

@@ -47,6 +47,7 @@ import <autoscend/paths/avatar_of_boris.ash>
 import <autoscend/paths/avatar_of_sneaky_pete.ash>
 import <autoscend/paths/avatar_of_west_of_loathing.ash>
 import <autoscend/paths/bees_hate_you.ash>
+import <autoscend/paths/bugbear_invasion.ash>
 import <autoscend/paths/casual.ash>
 import <autoscend/paths/community_service.ash>
 import <autoscend/paths/dark_gyffte.ash>
@@ -219,6 +220,7 @@ void initializeSettings() {
 	lowkey_initializeSettings();
 	bhy_initializeSettings();
 	grey_goo_initializeSettings();
+	bugbear_initializeSettings();
 
 	set_property("auto_doneInitialize", my_ascensions());
 }
@@ -3266,6 +3268,8 @@ boolean doTasks()
 	if(LM_glover())						return true;
 	//This just closets stuff that bees don't like
 	if(LM_bhy())						return true;
+	//This does some bugbear invasion specific item prep
+	LM_bugbear();
 
 	tophatMaker();
 	xiblaxian_makeStuff();
